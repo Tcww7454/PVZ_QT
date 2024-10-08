@@ -8,12 +8,15 @@ PVZ::PVZ(QWidget *parent)
     , mymap(nullptr)  // 初始化为 nullptr
     , toolbar(new ToolBar(":/res/bar5.png")) // 初始化一张图片,修改这里修改工具栏图标
     , cardManager(new CardManager(scene)) // 初始化 CardManager
+    , plant(1,"wandou",":/res/Plants/Peashooter/1.gif")
 {
     ui->setupUi(this);
     setGraphicsProperty();
     setMapView();
     setToolView();
     addCards();
+    scene->addItem(&plant);
+    plant.startAnimation();
 }
 
 PVZ::~PVZ()

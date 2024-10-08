@@ -3,6 +3,7 @@
 
 #include"map.h"
 #include"toolbar.h"
+#include"plant.h"
 #include <QWidget>
 #include<QString>
 #include<QPushButton>
@@ -25,13 +26,15 @@ public:
     void setMapView();
     void setToolView();
     void setGraphicsProperty();
+    void setPlants();
+    void addCards();
 private:
     Ui::PVZ *ui;
     QGraphicsScene *scene;
     map *mymap;
     ToolBar *toolbar;
     CardManager*cardManager;
-    void addCards();
+    Plant plant;
 
 };
 #endif // PVZ_H

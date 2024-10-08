@@ -1,5 +1,5 @@
 #忽略资源
-res/
+pvz_qt/res/
 
 # Qt生成的文件
 *.pro.user

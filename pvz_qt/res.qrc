@@ -12,5 +12,7 @@
         <file>res/bar3.png</file>
         <file>res/bar4.png</file>
         <file>res/bar5.png</file>
+        <file>res/Plants/Peashooter/0.gif</file>
+        <file>res/Plants/Peashooter/1.gif</file>
     </qresource>
 </RCC>
