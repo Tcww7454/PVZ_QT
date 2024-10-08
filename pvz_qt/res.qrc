@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>graphics/Map/map0.jpg</file>
+        <file>res/Map/map0.jpg</file>
+        <file>res/Screen/ChooserBackground.png</file>
+        <file>res/Cards/card_1.png</file>
+        <file>res/Cards/card_2.png</file>
+        <file>res/Cards/card_3.png</file>
+        <file>res/Cards/card_4.png</file>
+        <file>res/bar.png</file>
+        <file>res/bar2.png</file>
+        <file>res/bar3.png</file>
+        <file>res/bar4.png</file>
+        <file>res/bar5.png</file>
+    </qresource>
+</RCC>

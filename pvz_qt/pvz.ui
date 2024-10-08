@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PVZ</class>
+ <widget class="QWidget" name="PVZ">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PVZ</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>951</width>
+     <height>461</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_1">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_5">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_6">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_7">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_8">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btu_9">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>0</y>
+     <width>51</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

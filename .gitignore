@@ -1,0 +1,60 @@
+# Qt生成的文件
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.o
+*.moc
+*.cpp~ 
+*.h~ 
+
+# 编译输出目录
+build-*/
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Qt 模块生成的文件
+*.qmlc
+*.qmlproject
+*.qmltypes
+
+# CMake 生成的文件（如果使用 CMake）
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# 文档和调试文件
+*.log
+*.dSYM/
+*.pdb
+*.idb
+*.opendb
+*.dmp
+*.coverage
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swm
+*.~lock.*
+
+# 其他常见文件
+*.iml
+*.class
+*.jar
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.7z
+
+# 生成的文档
+doc/
+*.pdf
+*.html
