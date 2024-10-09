@@ -29,7 +29,7 @@ public:
     virtual bool use() = 0;
     QRectF boundingRect()const override;
     void paint(QPainter *painter,const QStyleOptionGraphicsItem*option, QWidget *widget)override;
-    CardType getType();
+    virtual CardType getType() const =0;
 protected:
     int id;
     QString name;

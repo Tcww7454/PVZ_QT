@@ -3,10 +3,12 @@
 Plant::Plant(int id, const QString &name, const QString &gifPath)
     : id(id) , name(name) , movie(std::make_unique<QMovie>(gifPath)),timer(new QTimer(this))
 {
+
+    setVisible(true); // 确保植物可见
     if(movie&& movie->isValid())
     {
         connect(timer, &QTimer::timeout, this, &Plant::updateAnimation);
-        timer->start(38);  // 每()毫秒更新一次动画,更改这里可以实现植物抽搐的频率,越小帧率越高
+        timer->start(77);  // 每()毫秒更新一次动画,更改这里可以实现植物抽搐的频率,越小帧率越高
         movie->start();
     }else {
         qWarning() << "Failed to load GIF:" << gifPath; // 检查 GIF 是否有效

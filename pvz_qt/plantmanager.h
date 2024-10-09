@@ -39,7 +39,7 @@ public:
     void clearAllPlants();
 
     //根据名称来添加植物
-    void createAndAddPlant(PlantType type,int id);
+    std::shared_ptr<Plant> createAndAddPlant(PlantType type,int id);
 
 private:
     QGraphicsScene *scene; // 该类操作的场景

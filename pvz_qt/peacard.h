@@ -13,6 +13,7 @@ public:
     QRectF boundingRect()const override;
     void paint(QPainter *painter,const QStyleOptionGraphicsItem*option, QWidget *widget)override;
     bool use()override;
+    CardType getType() const override;
 };
 
 #endif // PEACARD_H

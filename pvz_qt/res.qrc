@@ -14,5 +14,6 @@
         <file>res/bar5.png</file>
         <file>res/Plants/Peashooter/0.gif</file>
         <file>res/Plants/Peashooter/1.gif</file>
+        <file>res/bg.jpg</file>
     </qresource>
 </RCC>

@@ -1,7 +1,7 @@
 #include "map.h"
 
 map::map() {
-    image=QPixmap(":/graphics/Map/map0.jpg");
+    image=QPixmap(":/res/bg.jpg");
 }
 
 map::~map()

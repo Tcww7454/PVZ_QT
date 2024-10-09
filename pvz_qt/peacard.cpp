@@ -28,3 +28,7 @@ bool PeaCard::use()
 {
     return false;
 }
+
+CardType PeaCard::getType() const  {
+    return CardType::PeaCard; // 返回该卡牌的类型
+}

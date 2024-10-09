@@ -40,7 +40,7 @@ void PlantManager::clearAllPlants()
     plants.clear();  // 清空管理器中的植物
 }
 
-void PlantManager::createAndAddPlant(PlantType type, int id)
+std::shared_ptr<Plant> PlantManager::createAndAddPlant(PlantType type, int id)
 {
     std::shared_ptr<Plant> plant = nullptr;
 
@@ -62,6 +62,9 @@ void PlantManager::createAndAddPlant(PlantType type, int id)
     // 如果植物创建成功，将其添加到管理器和场景
     if (plant) {
         addPlant(id, plant);
+        return plant; // 返回植物指针
     }
+
+    return nullptr; // 如果植物未创建，返回 nullptr
 }
 

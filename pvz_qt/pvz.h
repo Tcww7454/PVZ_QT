@@ -9,6 +9,7 @@
 #include<peacard.h>
 #include<cardmanager.h>
 #include<plantmanager.h>
+#include <QMouseEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +30,13 @@ public:
     void setPlants();
     void addCards();
     void addPlants();
+    void mousePressEvent(QMouseEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void onPlantCardClicked(PlantType plantType);//测试
+    void mouseReleaseEvent(QMouseEvent *event);
+signals:
+    void plantCardClicked(PlantType plantType);
+
 private:
     Ui::PVZ *ui;
     QGraphicsScene *scene;
@@ -36,7 +44,8 @@ private:
     ToolBar *toolbar;
     CardManager*cardManager;
     PlantManager *plantManager;
-    //Plant plant;
-
+    bool isCreatingPlant = false; // 用于指示是否正在创建植物
+    std::shared_ptr<Plant> currentPlant; // 当前正在创建的植物
+    int plantsCount; // 用于生成植物 ID
 };
 #endif // PVZ_H
