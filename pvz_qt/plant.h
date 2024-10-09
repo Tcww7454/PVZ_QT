@@ -16,6 +16,8 @@ public:
     Plant(int id, const QString &name, const QString &gifPath);
     virtual ~Plant();
 
+    virtual void specialAbility()=0;
+
     // 重写 QGraphicsItem 的虚拟函数
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;

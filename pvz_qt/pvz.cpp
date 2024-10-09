@@ -8,15 +8,14 @@ PVZ::PVZ(QWidget *parent)
     , mymap(nullptr)  // 初始化为 nullptr
     , toolbar(new ToolBar(":/res/bar5.png")) // 初始化一张图片,修改这里修改工具栏图标
     , cardManager(new CardManager(scene)) // 初始化 CardManager
-    , plant(1,"wandou",":/res/Plants/Peashooter/1.gif")
+    , plantManager(new PlantManager(scene)) // 初始化 PlantManager
 {
     ui->setupUi(this);
     setGraphicsProperty();
     setMapView();
     setToolView();
     addCards();
-    scene->addItem(&plant);
-    plant.startAnimation();
+    addPlants();
 }
 
 PVZ::~PVZ()
@@ -91,4 +90,13 @@ void PVZ::addCards()
 {
     cardManager->addCard("PeaCard",1,100,":/res/Cards/card_1.png");
     cardManager->displayCards();
+}
+
+void PVZ::addPlants()
+{
+    // 创建一个豌豆射手对象
+    //std::shared_ptr<Plant> peashooter = std::make_shared<PeaShooter>(1, "Peashooter", ":/res/Plants/Peashooter/1.gif");
+
+    // 将豌豆射手添加到 PlantManager
+    plantManager->createAndAddPlant(PlantType::PeaShooter,1);
 }

@@ -14,7 +14,9 @@ SOURCES += \
     main.cpp \
     map.cpp \
     peacard.cpp \
+    peashooter.cpp \
     plant.cpp \
+    plantmanager.cpp \
     pvz.cpp \
     toolbar.cpp
 
@@ -23,7 +25,9 @@ HEADERS += \
     cards.h \
     map.h \
     peacard.h \
+    peashooter.h \
     plant.h \
+    plantmanager.h \
     pvz.h \
     toolbar.h
 
